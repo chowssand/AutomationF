@@ -16,7 +16,7 @@ public class EnvSetUp {
         execution of test cases
      */
 
-    public static WebDriver driver;
+    public static WebDriver driver=null;
 
     @BeforeTest
     //Ideal place to perform some setup which is shared among all tests.
@@ -30,6 +30,7 @@ public class EnvSetUp {
     }
     @AfterTest
     public void tearDown(){
+
         driver.quit();
     }
 }
